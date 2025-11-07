@@ -34,3 +34,21 @@ public class CheckResultTest {
         cr.addMessage("Missing subject.");
         assertFalse(cr.isPassed());
     }
+    // 5. adding two messages stores both
+    @Test
+    public void addTwoMessages_bothStored() {
+        CheckResult cr = new CheckResult();
+        cr.addMessage("msg1");
+        cr.addMessage("msg2");
+        assertEquals(2, cr.getMessages().size());
+    }
+
+    // 6. adding two messages keeps order
+    @Test
+    public void addTwoMessages_keepsOrder() {
+        CheckResult cr = new CheckResult();
+        cr.addMessage("first");
+        cr.addMessage("second");
+        assertEquals("first", cr.getMessages().get(0));
+        assertEquals("second", cr.getMessages().get(1));
+    }
