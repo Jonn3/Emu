@@ -56,7 +56,6 @@ public class Scraper {
         return map;
     }
 
-    // callable entry point for the grader
     public static void main(String[] args) throws Exception {
         Impact i = fromFile("sample.html");
         System.out.println(i);
