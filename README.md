@@ -22,3 +22,4 @@ tresurent, brandonrachal9021, darion17, jonn3
 - `sample.html` (snapshot input)
 
 **What it does**: Parses Goal, Raised, Updated date, and KPI metrics from the Centennial Campaign Impact snapshot.
+uml.png diagram link: ![alt text](Assets/uml.png)
